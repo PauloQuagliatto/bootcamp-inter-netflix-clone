@@ -1,0 +1,93 @@
+:root {
+  --netflix-red: #e50914;
+  --netflix-black: #141414;
+  --white-700: #aaaaaa;
+}
+
+/*----- CONFIG -----*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*----- MAIN -----*/
+
+body {
+  background: var(--netflix-black);
+  font-family: "Times New Roman", Times, serif;
+  color: white;
+}
+
+header .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .logo {
+  margin-left: 5px;
+  color: var(--netflix-red);
+  font-family: "Arial Black", Times, serif;
+}
+
+header nav a {
+  text-decoration: none;
+  color: var(--white-700);
+  margin-right: 10px;
+}
+
+header nav a:hover {
+  color: white;
+}
+
+/*----- MAIN MOVIE -----*/
+.main-movie {
+  font-size: 16px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%),
+    url("https://upload.wikimedia.org/wikipedia/pt/7/7c/HouseOfCards-Logo.png");
+
+    height: 400px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.main-movie .title {
+    margin-top: 15%;
+    font-size: 45px;
+    font-family: 'Trebuchet MS', Arial, serif;
+}
+
+.main-movie .description {
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.button {
+    margin-right: 15px;
+    padding: 15px 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+
+    font-size: 12px;
+    border:none;
+
+    cursor: pointer;
+
+    transition: .3s ease all;
+}
+
+.button i {
+    margin-right: 8px;
+}
+
+.button:hover {
+    background-color: white;
+    color: black;
+}
