@@ -2,6 +2,7 @@
   --netflix-red: #e50914;
   --netflix-black: #141414;
   --white-700: #aaaaaa;
+  --discord-blue: #6361ce;
 }
 
 /*----- CONFIG -----*/
@@ -10,6 +11,10 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+.container {
+  margin: 0 20px 0 10px;
 }
 
 /*----- MAIN -----*/
@@ -29,8 +34,9 @@ header .container {
 
 header .logo {
   margin-left: 5px;
-  color: var(--netflix-red);
+  color: var(--discord-blue);
   font-family: "Arial Black", Times, serif;
+  font-size: 32px;
 }
 
 header nav a {
@@ -44,50 +50,83 @@ header nav a:hover {
 }
 
 /*----- MAIN MOVIE -----*/
+
 .main-movie {
+  height: 480px;
+  margin-bottom: 15px;
+
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%), url("../img/discord-logo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
   font-size: 16px;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%),
-    url("https://upload.wikimedia.org/wikipedia/pt/7/7c/HouseOfCards-Logo.png");
+}
 
-    height: 400px;
-    background-size: cover;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+.main-movie .container {
+  width: 70%;
 }
 
 .main-movie .title {
-    margin-top: 15%;
-    font-size: 45px;
-    font-family: 'Trebuchet MS', Arial, serif;
+  margin-top: 15%;
+  font-size: 45px;
+  font-family: "Trebuchet MS", Arial, serif;
 }
 
 .main-movie .description {
-    margin-top: 10px;
-    margin-bottom: 40px;
+  margin-top: 10px;
+  margin-bottom: 40px;
 }
 
 .button {
-    margin-right: 15px;
-    padding: 15px 30px;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
+  margin-right: 15px;
+  padding: 15px 30px;
 
-    font-size: 12px;
-    border:none;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 12px;
 
-    cursor: pointer;
+  border: none;
+  border-radius: 8px;
 
-    transition: .3s ease all;
-}
+  cursor: pointer;
 
-.button i {
-    margin-right: 8px;
+  transition: 0.3s ease all;
 }
 
 .button:hover {
-    background-color: white;
-    color: black;
+  background-color: white;
+  color: black;
+}
+
+.button i {
+  margin-right: 8px;
+}
+
+/*----- CAROUSEL -----*/
+
+.carousel-movies {
+  margin-top: 5px;
+}
+
+.movie-box {
+  height: 100%;
+  width: 100%;
+  display: block;
+
+  cursor: pointer;
+}
+
+.item-container img {
+  border-radius: 8px;
+
+  transition: transform 0.5s ease;
+}
+
+.item-container :hover {
+  transform: scale(0.95);
 }

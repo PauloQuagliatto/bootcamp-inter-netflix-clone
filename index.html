@@ -4,6 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/main.css" />
+
+    <!-- Responsivity -->
+    <link rel="stylesheet" href="./styles/responsivity.css" />
+
+    <!-- OWL CSS -->
+    <link rel="stylesheet" href="./styles/owl/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./styles/owl/owl.theme.default.min.css" />
+
     <title>Botflixerson</title>
   </head>
   <body>
@@ -12,30 +20,67 @@
         <h2 class="logo">Botflix</h2>
         <nav>
           <a href="#">Inicio</a>
-          <a href="#">Séries</a>
-          <a href="#">Filmes</a>
-          <a href="#">Documentários</a>
+          <a href="#">Bots</a>
+          <a href="#">Donates</a>
+          <a href="#">Servidores Ativos</a>
         </nav>
       </div>
     </header>
     <main>
       <div class="main-movie">
         <div class="container">
-          <h3 class="title">House of Cards</h3>
-          <p class="description">Muita coisa aqui blab bla bla bla bal</p>
-        </div>
-        <div class="buttons">
-          <button role="button" class="button">
-            <i class="fas fa-play"></i>
-            ASSISTIR AGORA
-          </button>
-          <button role="button" class="button">
-            <i class="fas fa-info-circle"></i>
-            MAIS INFORMAÇÕES
-          </button>
+          <h3 class="title">Botflix</h3>
+          <p class="description">
+            O maior catálogo de bots para discord já criados, procure seus bots
+            favoritos, doe à seus criadores e entre nos melhores servidores.
+          </p>
+          <div class="buttons">
+            <button role="button" class="button">
+              <i class="fas fa-download"></i>
+              BAIXAR DISCORD
+            </button>
+            <button role="button" class="button">
+              <i class="fas fa-info-circle"></i>
+              MAIS INFORMAÇÕES
+            </button>
+          </div>
         </div>
       </div>
     </main>
+
+    <div class="carousel-movies">
+      <div class="owl-carousel owl-theme">
+        <div class="item item-container">
+          <img class="movie-box" src="./img/autocode.png" />
+        </div>
+        <div class="item item-container">
+          <img class="movie-box" src="./img/dank-memer.png" />
+        </div>
+        <div class="item item-container">
+          <img class="movie-box" src="./img/kurata.png" />
+        </div>
+        <div class="item item-container">
+          <img class="movie-box" src="./img/mudae.png" />
+        </div>
+        <div class="item item-container">
+          <img class="movie-box" src="./img/mushroom.png" />
+        </div>
+        <div class="item item-container">
+          <img class="movie-box" src="./img/poke-two.png" />
+        </div>
+        <div class="item item-container">
+          <img class="movie-box" src="./img/pro-bot.png" />
+        </div>
+      </div>
+    </div>
+
+    <!-- JAVASCRIPT -->
+
+    <script src="./js/index.js"></script>
+
+    <script src="./js/owl/jquery.min.js"></script>
+    <script src="./js/owl/owl.carousel.min.js"></script>
+    <script src="./js/owl/setup.js"></script>
 
     <script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
   </body>
