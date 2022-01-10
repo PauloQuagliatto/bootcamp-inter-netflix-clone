@@ -32,14 +32,35 @@ header .container {
   justify-content: space-between;
 }
 
-header .logo {
+header .container .nav-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+header .container .nav-container .logo {
+  margin-right: 20px;
   margin-left: 5px;
-  color: var(--discord-blue);
+  color: var(--netflix-red);
   font-family: "Arial Black", Times, serif;
   font-size: 32px;
 }
 
-header nav a {
+header .container .header-icons-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+header .container .header-icons-container i {
+  margin-left: 5px;
+
+  cursor: pointer;
+}
+
+header div nav a {
   text-decoration: none;
   color: var(--white-700);
   margin-right: 10px;
@@ -55,9 +76,10 @@ header nav a:hover {
   height: 480px;
   margin-bottom: 15px;
 
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%), url("../img/discord-logo.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%), url("../img/background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-image: center;
 
   display: flex;
   flex-direction: column;
@@ -129,4 +151,30 @@ header nav a:hover {
 
 .item-container :hover {
   transform: scale(0.95);
+}
+
+/*----- CUSTOM INPUT -----*/
+
+.custom-input {
+  padding: 5px;
+  border: 1px solid white;
+}
+
+.custom-input i {
+  margin-right: 3px;
+}
+
+.custom-input:focus {
+  padding: 5px;
+  border: 1px solid white;
+}
+
+.custom-input input {
+  color: white;
+  background: none;
+  border: none;
+}
+
+.custom-input input:focus {
+  outline: none;
 }
